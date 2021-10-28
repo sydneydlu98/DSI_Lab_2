@@ -2,10 +2,10 @@
 #'
 #' This function produces a boxplot of payments by DRG code.
 #'
-#' @param data a dataframe
+#' @param data a data frame
 #' @param type a string name for the type of payments
 #'
-#' @return A boxplot of payments by DRG code
+#' @return A box plot of payments by DRG code
 #' @export
 #'
 #' @importFrom magrittr %>%
