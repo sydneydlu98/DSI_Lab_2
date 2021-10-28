@@ -67,8 +67,8 @@ statistics_of_drg_code <- function(data, statistics){
   if(!is.element(statistics,
                  c("mean",
                    "median",
-                   "standard_deviation"))){
-    stop("Argument statistics should be either 'mean', 'median', 'standard_deviation'.")
+                   "sd"))){
+    stop("Argument statistics should be either 'mean', 'median', 'sd'.")
   }
   data %>%
     ## group the variable "DRG Definition"
@@ -76,7 +76,7 @@ statistics_of_drg_code <- function(data, statistics){
     ## calculate the mean, median and standard deviation for "Average Medicare Payments"
     summarise(mean = mean(`Average Medicare Payments`),
               median = median(`Average Medicare Payments`),
-              standard_deviation = sd(`Average Medicare Payments`)) %>%
+              sd = sd(`Average Medicare Payments`)) %>%
     select(`DRG Definition`, statistics) %>%
     ## change the number of decimal places for the results in the tibble
     mutate_if(is.numeric, scales::number, accuracy = 0.01)
