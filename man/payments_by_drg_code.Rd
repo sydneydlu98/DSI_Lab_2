@@ -7,12 +7,12 @@
 payments_by_drg_code(data, type)
 }
 \arguments{
-\item{data}{a dataframe}
+\item{data}{a data frame}
 
 \item{type}{a string name for the type of payments}
 }
 \value{
-A boxplot of payments by DRG code
+A box plot of payments by DRG code
 }
 \description{
 This function produces a boxplot of payments by DRG code.
