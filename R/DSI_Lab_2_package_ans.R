@@ -64,11 +64,11 @@ payments_by_drg_code <- function(data, type){
 #'
 statistics_of_drg_code <- function(data, statistics){
   # add conditional execution
-  if(!is.element(type,
-                 c("Average Covered Changes",
-                   "Average Total Payments",
-                   "Average Medicare Payments"))){
-    stop("Argument type should be either 'Average Covered Changes', 'Average Total Payments', 'Average Medicare Payments'.")
+  if(!is.element(statistics,
+                 c("mean",
+                   "median",
+                   "standard_deviation"))){
+    stop("Argument statistics should be either 'mean', 'median', 'standard_deviation'.")
   }
   data %>%
     ## group the variable "DRG Definition"
