@@ -1,0 +1,10 @@
+---
+title: "Lab2_function_github_link"
+author: "Dingxin Lu"
+date: "10/23/2021"
+output: html_document
+---
+
+[my Github Link] https://github.com/sydneydlu98/DSI_Lab_2
+
+Collaborated with Peizheng Chen, Ying Li in class.
